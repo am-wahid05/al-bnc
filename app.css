@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 96%;
+        scroll-behavior: smooth;
+   
+}
+
+body{
+   background: linear-gradient( #f4f7e9, #dcebc8, #b7cf9a);
+}
+/* .header_container{
+  margin: 0 20px;
+    min-width: 100px;
+    width: 97%;
+} */
+
+.header{
+   /* height: 7rem; */
+    display: flex;
+    justify-content: flex-start;
+   gap: 22rem;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 2;
+  background: linear-gradient(to right, #fff, #dcebc8, #b7cf9a);
+}
+
+
+.title1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.title{
+    width: 5rem;
+    height: auto;
+}
+
+
+/* h1{
+    position: absolute;
+    left: 7rem;
+} */
+
+
+
+.subheading{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.heading{
+line-height: 1;
+margin-left: 0;
+width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:rgba(34, 32, 32, 0.884);
+
+    
+}
+
+nav a:hover{
+    font-size: 0.9rem;
+    border: 1px solid white;
+transition: all 0.6s ease-in-out 0.2s;
+background-color: rgb(0, 99, 0);
+color: whitesmoke;
+border-radius: 7px;
+   
+}
+
+
+.hero{
+  max-height: 100vh;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+  position: relative;
+  background-image: url("Assets/cashew.jpeg");
+  background-size: cover;
+  background-position: center;
+line-height: 2;
+word-spacing: 5px;
+
+}
+
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0));
+}
+
+.hero_content{
+
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+    margin-left: 2%;
+    text-align: left;
+    color: white;
+}
+
+.main_nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+}
+.learn{
+    text-decoration: none;
+    color: green;
+}
+
+.learn:hover{
+font-size: 1.4rem;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 0.7rem;
+
+ margin: 2rem;
+line-height: 4;
+    font-size: 1.2rem;
+    color:white;
+    border: 1px solid lightgreen ;
+    border-radius: 7px;
+}
+
+.content{
+    margin-top: 8rem;
+}
+
+.content_2{
+
+    margin-top: 4rem;
+}
+.secondary{
+    background-color: rgb(0, 99, 0);
+    color: whitesmoke;
+  
+border: 1px solid black;
+}
+
+.secondary:hover{
+    background-color: rgb(81, 235, 81);
+    color: whitesmoke;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.primary:hover{
+    background-color:rgb(81, 235, 81) ;
+    color: whitesmoke;
+    border: none;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+
+.primary1{
+    background-color:rgb(81, 235, 81) ;
+    color: black;
+    border: none;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.primary1:hover{
+    background-color:rgb(81, 235, 81) ;
+    color: whitesmoke;
+    border: none;
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.info{
+    margin: 5rem 0;
+    line-height: 1.5;
+     max-width: 80%;
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    text-align: center;
+    
+}
+
+.sub_heading{
+    line-height: 2;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+}
+
+#product{
+   background-color: #dcebc8;
+   color: black;
+   box-shadow: 8px 4px 4px gray, 1px 1px 6px gray;
+   padding: 1rem;
+}
+
+figure{
+display: flex;
+justify-content:space-between;
+padding: 1rem;
+
+}
+
+figure img{
+  width: 25rem;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+figcaption a{
+    color: black;
+     text-decoration: none;
+     width: 12rem;
+    padding: 0.2rem;
+ margin: 1rem;
+line-height:2;
+    font-size: 1.2rem;
+    border: 1px solid lightgreen ;
+    border-radius: 7px;
+    height: auto;
+    text-align: center;
+}
+
+figcaption{
+ 
+    max-width: 550px;
+ flex-direction: column;
+  display: flex;
+align-items: center;
+
+    margin-left: 5%;
+    text-align: left;
+     
+}
+
+@media (max-width:64rem){
+    html{
+        font-size: 96%;
+    }
+}
+
+@media (max-width:53rem){
+    html{
+        font-size: 93%;
+    }
+}
+
+@media (max-width:48rem){
+    html{
+        font-size: 90%;
+    }
+
+    .info{
+    margin: 2.5rem 0;
+    line-height: 1.5;
+     max-width: 90%;
+    position: relative;
+    z-index: 1;
+    margin-left: 5%;
+    text-align: center;
+    
+}
+
+figcaption{
+    max-width: 550px;
+ flex-direction: column;
+  display: flex;
+align-items: center;
+    margin-left: 2%;
+    text-align: left;
+     
+}
+}
+
+@media (max-width:45rem){
+    html{
+        font-size: 90%;
+    }
+
+ 
+
+    .header_container{
+  margin: 0;
+    max-width: 1400px;
+    width: 100vw;
+} 
+
+  .hamburger{
+    width: 80px;
+    z-index: 2;
+  }
+
+.hamburger:hover + .main_nav{
+     transform: translate(200px);
+     opacity: 1;
+     transition: all 0.5s ease;
+  }
+
+  span{
+    height: 5px;
+    background-color: black;
+    margin: 10px;
+    display: block;
+  }
+
+.main_nav{
+        width: 500px;
+        height: 150vh;
+      background: linear-gradient( #f4f7e9, #dcebc8, #b7cf9a);
+    align-items: center;
+   position: absolute;
+     transform: translateX(699px);
+     opacity: 0;
+     display: flex;
+     flex-direction: column;
+   
+    } 
+
+nav a:hover{
+    font-size:2.3rem ;
+}
+
+    nav a{
+       margin-bottom: 8rem;
+       font-weight: 700;
+       font-size: 2rem;
+    }
+
+    
+hero{
+  min-width: 100vw;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+  position: relative;
+  background-image: url("Assets/cashew.jpeg");
+  background-size: cover;
+  background-position: center;
+line-height: 2;
+word-spacing: 5px;
+
+} 
+
+
+figure{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1rem;
+
+}
+
+figure img{
+  width: 10rem;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+
+
+
+}
+
+@media (max-width:41rem){
+    html{
+        font-size: 90%;
+    }
+
+
+    .hamburger{
+        width: 40px;
+        position: fixed;
+        right: 8px;
+    }
+
+    span{
+        height: 5px;
+        background-color: black;
+        margin: 5px 0;
+        display: block;
+  border-radius: 7px;
+    }
+
+
+
+
+
+
+figure{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1rem;
+
+}
+
+figure img{
+  width: 22rem;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 1rem;
+} 
+
+}
