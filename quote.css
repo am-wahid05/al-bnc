@@ -1,0 +1,219 @@
+/* 
+linear-gradient( #f4f7e9, #dcebc8, #b7cf9a)
+ */
+ :root{
+    --button-background-color: linear-gradient(135deg, #1b5e20, #66bb6a);
+    --button-color:#faf92a;
+    --background-color:linear-gradient( #f4f7e9, #dcebc8, #b7cf9a);
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+        scroll-behavior: smooth;
+   
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+     /* background: var(--background-color); */
+  
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+background: linear-gradient(135deg, #0b3d2e, #2e7d32);
+color: white;
+
+/* background: linear-gradient(135deg, #14532d, #8a5a2b); */
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img{
+    width: 8rem;
+    height: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+  gap:1rem;
+}
+
+
+.nav_links{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul{
+    font-size: 2rem;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+nav a{
+text-decoration: none;
+color: white;
+
+}
+
+nav a:hover{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+
+.hero_content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: normal;
+    color:#faf92a;
+margin-bottom: 4rem;
+}
+
+.hero_content p{
+padding-bottom: 4rem;
+  font-size: 3rem;  
+}
+
+
+
+
+.hero{
+  min-height: 35rem;
+display: flex;
+justify-content: center;
+align-items:flex-end;
+  position: relative;
+  background-image: url("Assets/cocoa.jpeg");
+  background-size: cover;
+  background-position: center;
+line-height: 1;
+word-spacing:0.5rem;
+
+}
+
+
+.hero::before{
+    content: "";
+    position: absolute;
+    inset:0;
+    background: linear-gradient(to top,
+    rgba(10, 55, 35, 0.9),
+    rgba(10, 55, 35, 0.3),
+    rgba(0, 0, 0, 0));
+}
+
+.hero_content{
+
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+    margin-left: 2%;
+    text-align: center;
+    color: white;
+} 
+
+.contact_form{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+    gap: 2.5rem;
+}
+
+
+.form_group{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form_group label{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.form_group input{
+    width: 100%;
+    padding: 1rem 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 1.6rem;
+    outline: none;
+     box-shadow: 0 4px 12px  rgba(0, 0, 0, 0.15);
+}
+
+.form_group input:hover{
+    outline: 1px solid black;
+}
+
+
+
+
+.form_group input[type="email"]:invalid{
+    outline: 1px solid red;
+}
+
+
+
+.form_group textarea{
+    outline: none;
+      box-shadow: 0 4px 12px  rgba(0, 0, 0, 0.15);
+}
+
+.form_group textarea:focus, .form_group input:focus{
+    outline: 1px solid black;
+}
+
+
+
+
+.contact_form button{
+    grid-column: 1 / -1;
+    width: fit-content;
+    padding: 1.3rem 1.3rem;
+    border: none;
+    border-color: 5px;
+    color: white;
+    cursor: pointer;
+        text-decoration: none;
+    background: var(--button-background-color);
+    color: white;
+    border-radius: 5px;
+   line-height:1;
+ position: relative;
+     left: 15rem;
+} 
+
+.contact_form button:hover{
+    color: black;
+    background: var(--background-color);
+}
+
+
+.get_a_quote{
+    margin: 4rem;
+}
