@@ -491,7 +491,7 @@ margin: 42rem auto 0;
 
     @keyframes pushIn {
        from{
-        transform: translateX(40rem);
+        transform: translateX(10rem);
        } 
 
        to{
