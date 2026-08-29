@@ -1,218 +1,538 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a quote</title>
-    <link rel="icon" href="Assets/logo_main.jpeg" type="image/x-icon">
- <link rel="stylesheet" href="quote.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="fontawesome/css/brands.css">
+
+
+<title>Get a Quote</title>
+
+<link rel="icon" href="Assets/logo.jpeg" type="image/x-icon">
+
+<link rel="stylesheet" href="quote.css">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="fontawesome/css/brands.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/dc446fe50e.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/dc446fe50e.js"
+    crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
-  
-       <header>
-           <nav>
-    <div class="logo">
-        <img src="Assets/logo_main.jpeg" alt="logo of al-bnc ventures">
-        <h1>AL-BNC</h1>
+
+
+<header>
+    <nav>
+
+        <div class="logo">
+            <img src="Assets/logo_main.jpeg" alt="logo of AL-BNC Ventures">
+            <h1>AL-BNC</h1>
+        </div>
+
+        <input type="checkbox" id="menu_toggle">
+
+        <label for="menu_toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <ul class="nav_links">
+
+            <li>
+                <a href="index.html#hero">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">Discover Us</a>
+            </li>
+
+            <li>
+                <a href="product.html">Products</a>
+            </li>
+
+            <li>
+                <a href="index.html#call">Contact</a>
+            </li>
+
+            <li>
+                <a href="quote.html">Get a Quote</a>
+            </li>
+
+            <div class="copy">
+                <p>AL-BNC VENTURES &copy; All rights reserved 2026</p>
+            </div>
+
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero_container">
+
+        <div class="hero_content animate">
+
+            <h1>REQUEST A QUOTE</h1>
+
+            <p id="form">
+                Tell us what agricultural products you're looking to buy.
+            </p>
+
+        </div>
+
     </div>
 
-    <input type="checkbox" id="menu_toggle">
+</section>
 
-    <label for="menu_toggle" class="hamburger">
-        <span></span><span></span><span></span>
-    </label>
 
-    <ul class="nav_links">
-        <li><a href="index.html#hero">Home</a></li>
-        <li><a href="about.html">Discover Us</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="index.html#call">Contact</a></li>
-        <li><a href="quote.html">Get a Quote</a></li>
-         <div class="copy">
-            <p>  AL-BNC VENTURES   &copy; All rights reserved 2026</p>
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+    <!-- QUOTE FORM -->
+
+    <section class="quote_form_section">
+
+        <div class="quote_container">
+
+            <div class="quote_heading">
+
+                <h2>
+                    Request a Quote
+                </h2>
+
+                <p>
+                    Fill out the form and we'll get back to you.
+                </p>
+
             </div>
-    </ul>
-</nav>
-        </header>
-
-                <section class="hero">
-            <div class="hero_container">
-                <div class="hero_content animate">
 
 
-<h1>REQUEST A QUOTE</h1>
+            <form class="quote_form animate">
 
- <p id="form">   Tell us what agricultural products you're looking to buy. </p>
+                <!-- NAME + COMPANY -->
 
-    </div>
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            name="fullname"
+                            id="name"
+                            placeholder="Abdul Wahid Mumuni"
+                            minlength="3"
+                            required
+                        >
+
+                    </div>
 
 
-    
-            </div>
-        </section>
+                    <div class="form_group">
 
-          <div class="container">
+                        <label for="company_name">
+                            Company Name
+                        </label>
 
-        <section class="quote_form_section">
-<div class="quote_container">
-    <div class="quote_heading">
+                        <input
+                            type="text"
+                            name="company_name"
+                            id="company_name"
+                            placeholder="AL-BNC Ventures"
+                            minlength="3"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE + EMAIL -->
+
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="contact">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            name="contact"
+                            id="contact"
+                            placeholder="0530466346"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="abdul@gmail.com"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT + QUANTITY -->
+
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="product">
+                            Product
+                        </label>
+
+                        <select
+                            name="product"
+                            id="product"
+                            required
+                        >
+
+                            <option value="">
+                                Select product
+                            </option>
+
+                            <option value="cashew">
+                                Cashew
+                            </option>
+
+                            <option value="shea_nut">
+                                Shea Nut
+                            </option>
+
+                            <option value="cocoa">
+                                Cocoa
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="quantit">
+                            Quantity
+                        </label>
+
+                        <div class="quantity_input">
+
+                            <input
+                                type="number"
+                                id="quantit"
+                                name="quantity"
+                                placeholder="Enter quantity"
+                                min="1"
+                                step="any"
+                                required
+                            >
+
+                            <select
+                                id="unit"
+                                name="unit"
+                                required
+                            >
+
+                                <option value="">
+                                    Unit
+                                </option>
+
+                                <option value="kg">
+                                    kg
+                                </option>
+
+                                <option value="tonnes">
+                                    Tonnes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION + DATE -->
+
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="location">
+                            Delivery Location
+                        </label>
+
+                        <input
+                            type="text"
+                            name="location"
+                            id="location"
+                            placeholder="Tema"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="date">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            name="date"
+                            id="date"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form_row">
+
+                    <div class="form_group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            name="message"
+                            id="message"
+                            required
+                            placeholder="Type your message here"
+                            minlength="20"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit">
+                    REQUEST A QUOTE
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY REQUEST A QUOTE -->
+
+    <section class="why_request">
+
         <h2>
-            Request a quote
+            Why Request a Quote
         </h2>
 
-        <p>Fill out the form and we'll get back to you.</p>
-    </div>
-             <form class="quote_form animate">
-                    <div class="form_row">
-                        <div class="form_group">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="fullname" id="name" placeholder="Abdul Wahid Mumuni" minlength="3" required>
-                        </div>
-
-                         <div class="form_group">
-                        <label for="name">Company Name</label>
-                        <input type="text" name="company_name id="name" placeholder="al-bnc ventures" minlength="3" required>
-                        </div>
-                    </div>
-                    
-
-                     <div class="form_row">
-                        <div class="form_group">
-                <label for="contact">Phone Number</label>
-                <input type="tel" 
-               name="contact" id="contact" placeholder="0530466346"  required>
-              </div>
-
-  <div class="form_group">           
-                   <label for="email">Email</label>
-                <input type="email" name="email id="email" placeholder="abdul@gmail.com">
-                </div>
-                   </div>
-                 
-
-                   <div class="form_row">
-                    <div class="form_group">
-             <label for="product">Product</label>
-             <select name="product" id="product" required>
-                <option value="">select product</option>
-                <option value="cashew">Cashew</option>
-                <option value="shea_nut">Shea Nut</option>
-                <option value="cocoa">Cocoa</option>
-             </select>
-</div>
-<div class="form_group">
-    <label for="quantit">Quantity</label>
-
-    <div class="quantity_input">
-        <input
-            type="number"
-            id="quantit"
-            name="quantity"
-            placeholder="Enter quantity"
-            min="1"
-            step="any"
-            required
-        >
-
-        <select id="unit" name="unit" required>
-            <option value="">Unit</option>
-            <option value="kg">kg</option>
-            <option value="tonnes">Tonnes</option>
-        </select>
-    </div>
-</div>
-                </div>
-
-
-                                  <div class="form_row">
-                                    <div class="form_group">
-                <label for="location">Delivery Location</label>
-                <input type="text" name="location" id="location" placeholder="Tema"  required>
-                                    </div>
-                                    <div class="form_group">
-                   <label for="date">Preferred Date</label>
-                <input type="date" name="date" id="date" placeholder="24/08/2026" required >
-                </div>
-            </div>
-
-
-<div class="form_row">  
-    <div class="form_group">                 
-                <label for="message">Message</label>
-                <textarea name="message" id="message" required placeholder="Type your message here" minlength="20" cols="30" rows="10"></textarea>
-                </div>
-                </div>
-                   </div> 
-
-               
-                  <button type="submit">REQUEST A QUOTE </button> 
-                
-                </form>
-                </div>
-            </section>
-     
-     <section class="why_request ">
-
-        <h2>Why Request a Quote</h2>
         <div class="boxes">
-        <div class="animate box">Competitive Pricing</div>
-        <div class="animate box">Reliable suply</div>
-        <div class="animate box">Direct Farmers</div>
-</div>
-<section class="more_info animate">
-    <h2>Need More Information?</h2>
-    <p>Contact us and we'll be happy to help</p>
-    <a href="index.html#call">Contact Us</a>
-</section>
- </div>             
 
-        <section class="footer">
+            <div class="animate box">
+                Competitive Pricing
+            </div>
 
-            <div class="footer_container">
-                <div class="company_name">
-                    <h2>AL-BNC VENTURES</h2>
-                    <p>AL-BNC Ventures connects farmers with reliable buyers by sourcing quality raw cashew, shea nuts, and cocoa.</p>
-                </div>
-            <div class="quick">
-                <h2>Quick links</h2>
-               
-                  <div class="quick_links">
-                    <a href="index.html#hero">Home</a>
-                    <a href="about.html">Discover Us</a>
-                    <a href="product.html">Products</a>
-                    <a href="index.html#call">Contact Us</a>
-                     <a href="quote.html">Get a Quote</a>
-                </div>
-           
+            <div class="animate box">
+                Reliable Supply
             </div>
-            <div class="footer_product">
-                <h2>Products</h2>
-                <a href="product.html#cashew">Cashew</a>
-                <a href="product.html#sheanut">Shea Nut</a>
-                <a href="product.html#cocoa">Cocoa</a>
+
+            <div class="animate box">
+                Direct Farmers
             </div>
-            
-            <div class="footer_contact">
-    <h2>Contact us</h2>
-                <a href="tel:+233244767775">Phone</a>
-                <a href="https://wa.me/+233248002055">Whatsapp</a>
-                <a href="mailto:albncventures2013@gmail.com">Email</a>
-            </div>
-             
-            </div>
-           <div class="copyright">
-            <p>&copy; All rights reserved   
-             AL-BNC VENTURES </p>
-             <p>2026</p>
-           </div>
+
+        </div>
+
+
+        <!-- MORE INFORMATION -->
+
+        <section class="more_info animate">
+
+            <h2>
+                Need More Information?
+            </h2>
+
+            <p>
+                Contact us and we'll be happy to help
+            </p>
+
+            <a href="index.html#call">
+                Contact Us
+            </a>
+
         </section>
-   <script src="script.js"></script>
+
+    </section>
+
+</div>
+<!-- END OF MAIN .container -->
+
+
+<!-- FOOTER -->
+
+<section class="footer">
+
+    <div class="footer_container">
+
+        <div class="company_name">
+
+            <h2>
+                AL-BNC VENTURES
+            </h2>
+
+            <p>
+                AL-BNC Ventures connects farmers with reliable buyers
+                by sourcing quality raw cashew, shea nuts, and cocoa.
+            </p>
+
+        </div>
+<div class="row_it">
+
+        <div class="quick">
+
+            <h2>
+                Quick Links
+            </h2>
+
+            <div class="quick_links">
+
+                <a href="index.html#hero">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    Discover Us
+                </a>
+
+                <a href="product.html">
+                    Products
+                </a>
+
+                <a href="index.html#call">
+                    Contact Us
+                </a>
+
+                <a href="quote.html">
+                    Get a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer_product">
+
+            <h2>
+                Products
+            </h2>
+
+            <a href="product.html#cashew">
+                Cashew
+            </a>
+
+            <a href="product.html#sheanut">
+                Shea Nut
+            </a>
+
+            <a href="product.html#cocoa">
+                Cocoa
+            </a>
+
+        </div>
+
+
+        <div class="footer_contact">
+
+            <h2>
+                Contact Us
+            </h2>
+
+            <a href="tel:+233244767775">
+                Phone
+            </a>
+
+            <a href="https://wa.me/+233248002055">
+                WhatsApp
+            </a>
+
+            <a href="mailto:albncventures2013@gmail.com">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- COPYRIGHT -->
+
+    <div class="copyright">
+
+        <p>
+            &copy; All rights reserved AL-BNC VENTURES
+        </p>
+
+        <p>
+            2026
+        </p>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
+          
