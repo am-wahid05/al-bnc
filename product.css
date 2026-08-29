@@ -26,7 +26,7 @@ html{
 
 body{
      /* background: var(--background-color); */
-  
+      font-family: "Poppins", sans-serif;
 }
 
 header{
@@ -44,6 +44,10 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.copy{
+    display: none;
 }
 
 nav img{
@@ -429,83 +433,69 @@ line-height: 8;
 }
 
 
-.footer_container{
- background: linear-gradient(135deg, #0b3d2e, #2e7d32);
-color:whitesmoke;   
-min-height: 25rem;
-display: flex;
-justify-content: space-evenly;
-padding-top: 4rem;
-margin-top: 8rem;
-border-top-right-radius:4px;
-border-top-left-radius:4px;
+.footer_container {
+   background: #f5f7f2;
+    color: black;
+    min-height: 25rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 4rem 3rem;
+    margin-top: 8rem;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
-
-.company_name{
+.company_name {
     max-width: 40rem;
     text-align: center;
-    
 }
 
-.company_name p{
+.company_name p {
     margin-top: 1rem;
     font-size: 1.5rem;
+    line-height: 1.8;
 }
 
-.quick_links{
+.quick{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-     font-size: 1.5rem;
-     line-height: 1.1;
+    font-size: 1rem;
 }
 
-.quick_links a{
+
+.footer_product,
+.footer_contact,.quick_links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.footer_product a,
+.footer_contact a,.quick_links a {
+    text-decoration: none;
+    color: black;
     font-size: 1.5rem;
 }
 
 
-.footer_product{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;  
+
+.copyright {
+    text-align: center;
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, #0b3d2e, #2e7d32);
+    line-height: 1.5;
+    word-spacing: 2px;
+   
 }
 
-.footer_product a{
-    text-decoration: none;
-    color: whitesmoke;
+.footer_contact h2, .footer_product h2, .quick h2, .company_name h2{
     font-size: 2rem;
-     font-size: 1.5rem;
-}
-
-.footer_contact{
-     display: flex;
-    flex-direction: column;
-    gap: 1rem;   
-}
-
-.footer_contact a{
-      text-decoration: none;
-    color: whitesmoke;
-    font-size: 2rem;
-     font-size: 1.5rem;
-}
-
-.copyright{
-text-align: center;
-    color: whitesmoke;
-   padding: 2rem;
-   font-size: 1.5rem;
-   background: linear-gradient(135deg, #0b3d2e, #2e7d32);
-   line-height: 1.5;
-   word-spacing: 2px;
-   letter-spacing: 2px;
-}
-
-.footer_product h2, .footer_contact  h2,.company_name h2{
-    font-size: 2.5rem;
-    font-weight: 700;
 }
 
 
@@ -912,34 +902,60 @@ text-align: center;
     .nav_links {
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: 1px;
+        width: 80%;
+        height: 80vh;
+        opacity: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
         margin: 0;
         padding: 0;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
         background: linear-gradient(135deg, #0b3d2e, #2e7d32);
-        z-index: 5;
     }
 
+    
+    .copy{
+    display: block;
+margin: 18rem auto 0;
+    text-align: center;
+}
+
+.copy p{
+  font-size: 1.4rem;
+}
+
     #menu_toggle:checked ~ .nav_links {
-        display: flex;
+        opacity: 1;
+        animation:pushIn 0.5s ease-in ;
     }
+
+    @keyframes pushIn {
+       from{
+        transform: translateX(40rem);
+       } 
+
+       to{
+        transform: translateX(0);
+       }
+    }
+
 
     .nav_links li {
         width: 100%;
-        text-align: center;
+        text-align: left;
+        
     }
 
     .nav_links li a {
         display: block;
-        width: 100%;
-        padding: 1.4rem 1rem;
+        /* width: 100%; */
+        padding: 2rem 1.5rem;
         font-size: 1.7rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        margin: 0 8rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
+
 
     .nav_links li a:hover {
         margin: 0;
@@ -1237,8 +1253,7 @@ text-align: center;
     .icon_link {
         width: 4rem;
         right: 1.5rem;
-        margin-top: 4rem;
-       top: 6rem;
+       top: 10rem;
         position: relative;
         display: block;
         margin-left: auto;
@@ -1253,20 +1268,20 @@ text-align: center;
     /* FOOTER */
 
     .footer_container {
-        width: 100%;
-        min-height: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 3rem;
+       
+        
+        display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+        gap: 4rem 2rem;
         padding: 4rem 2rem;
-        margin-top: 5rem;
-        text-align: center;
     }
 
-    .company_name {
-        width: 100%;
-        max-width: none;
-    }
+  .footer_links{
+    display: flex;
+ gap: 4rem;
+  }
 
     .company_name h2,
     .footer_product h2,
@@ -1276,16 +1291,10 @@ text-align: center;
 
     .company_name p {
         font-size: 1.4rem;
-        line-height: 1.7;
+   
     }
 
-.quick_links{
-    margin-right: 4rem;
-}
 
-.quick_links li{
-    margin-left: 15rem;
-}
 
     .quick_links,
     .footer_product,
