@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AL-BNC VENTURES</title>
-    <link rel="icon" href="Assets/logo.jpeg" type="image/x-icon">
+    <link rel="icon" href="Assets/logo_main.jpeg" type="image/x-icon">
  <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="fontawesome/css/solid.css">
@@ -14,23 +14,34 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/dc446fe50e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="container">
         <header>
-            <nav>
-            <div class="logo">
-                <img src="Assets/logo_main.jpeg" alt="logo of al-bnc ventures">
-                <h1>AL-BNC</h1>
-            </div>
-                <ul class="nav_links">
-                    <li><a href="\">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="#call">Contact</a></li>
-                    <li><a href="quote.html">Get a Quote</a></li>
-                </ul>
-            </nav>
+
+<nav>
+    <div class="logo">
+        <img src="Assets/logo_main.jpeg" alt="logo of al-bnc ventures">
+        <h1>AL-BNC</h1>
+    </div>
+
+    <input type="checkbox" id="menu_toggle">
+
+    <label for="menu_toggle" class="hamburger">
+        <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav_links">
+        <li><a href="\">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="#call">Contact</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+    </ul>
+</nav>
+
+
         </header>
+      
         <section class="hero">
             <div class="hero_container">
                 <div class="hero_content">
@@ -54,8 +65,8 @@ We source quality raw products including
     </div>
             </div>
         </section>
-
-        <section id="about">
+  <div class="container">
+        <section id="about" class="animate">
             <div class="about_container">
 
     <img src="Assets/cashew nut.jpeg" alt="about image">
@@ -80,7 +91,7 @@ We believe that strong relationships, trust, and consistency are the foundations
             </div>
         </section>
 
-        <section id="product">
+        <section id="product" class="animate">
 <div class="product_container">
 
    <h2>OUR PRODUCTS</h2>
@@ -89,34 +100,30 @@ We believe that strong relationships, trust, and consistency are the foundations
 At AL-BNC VENTURES, we source and supply  quality raw agricultureproducts from trusted farmers and suppliers</h3> 
     <div class="product_content">
 <div class="product_cards">
-    <div class="product_card">
+    <div class="product_card animate">
         <img src="Assets/cashew nut.jpeg" alt="image of cashew nut" id="cashew">
        <div class="product_card_text">
         <h3>CASHEW NUT</h3>
-        <p>Quality raw cashew nuts sourced from farmers and suppliers for buyers seeking dependable agriculture.
-    commodities 
-    <a href="product.html">Explore</a>
+   <p>Quality raw cashew nuts sourced from trusted farmers and suppliers.</p>
+<a href="product.html#cashew">Explore</a>
 
 </p>
 </div>
     </div>
-    <div class="product_card">
-<img src="Assets/shea_nut (2).jpeg" alt="image of shea nut" id="shea nut">
+    <div class="product_card animate">
+<img src="Assets/shea_nut (2).jpeg" alt="image of shea nut" id="sheanut">
 <div class="product_card_text">
 <h3>SHEA NUT</h3>
-<p>
-Quality raw shea nuts sourced from farmers and suppliers for commercial and industrial buyers
-</p>
-<a href="product.html">Explore</a>
+<p>Quality raw shea nuts sourced from trusted farmers and suppliers.</p>
+<a href="product.html#sheanut">Explore</a>
 </div>
     </div>
-    <div class="product_card" id="cocoa">
+    <div class="product_card animate" id="cocoa">
 <img src="Assets/cocoa.jpeg" alt="image of cocoa">
 <div class="product_card_text">
 <h3>COCOA</h3>
-<p>We source raw cocoa from trusted sources, connecting quality agriculture products with buyers and businesses
-
-</p><a href="product.html">Explore</a>
+<p>Quality raw cocoa sourced from trusted farmers and suppliers.</p>
+<a href="product.html#cocoa">Explore</a>
 </div>
     </div>
 </div>
@@ -124,9 +131,9 @@ Quality raw shea nuts sourced from farmers and suppliers for commercial and indu
 </div>
 
         </section>
-        <section class="call_to_action">
+        <section class="call_to_action animate" id="call">
             <div class="action_container">
-                <div class="call_content" id="call">
+                <div class="call_content">
                   <h3>LET'S WORK TOGETHER</h3>
                   <p>Have questions or want to learn more about our products? Get in touch with AL-BNC VENTURES </p>
                 </div>
@@ -135,7 +142,7 @@ Quality raw shea nuts sourced from farmers and suppliers for commercial and indu
                         <h2><i class="fas fa-phone"></i></h2>
                        <p> <a href="tel:+23324767775">+233(0)24 476 7775</a></p>
                         <h2><i class="fa-brands fa-whatsapp"></i></h2>
-                               <p><a href="wa.me">+233(0)24 800 2055</a></p>
+                               <p><a href="htpps://wa.me/233248002055">+233(0)24 800 2055</a></p>
                     </div>
 
                     <div class="info_2">
@@ -155,7 +162,7 @@ Quality raw shea nuts sourced from farmers and suppliers for commercial and indu
                 <form class="contact_form">
                     <div class="form_group">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Abdul Wahid Mumuni" minlength="3">
+                        <input type="text" id="name" placeholder="Abdul Wahid Mumuni" minlength="3" required>
                         
                     </div>
 
@@ -178,7 +185,7 @@ Quality raw shea nuts sourced from farmers and suppliers for commercial and indu
                
             </div>
         </section>
-        
+         </div>
         <section class="footer">
             <div class="footer_container">
                 <div class="company_name">
@@ -186,27 +193,28 @@ Quality raw shea nuts sourced from farmers and suppliers for commercial and indu
                     <p>AL-BNC Ventures connects farmers with reliable buyers by sourcing quality raw cashew, shea nuts, and cocoa. we are committed to building trusted partnerships and creatind opportunities within the agriculture supply chain.</p>
                 </div>
             <div class="quick_links">
-                <h2>quick links</h2>
+                <h2>Quick links</h2>
                 <nav>
                   <ul class="quick_links">
                     <li><a href="\">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="product.html">Products</a></li>
                     <li><a href="#call">Contact Us</a></li>
+                     <li><a href="quote.html">Get a Quote</a></li>
                 </ul>
             </nav>
             </div>
             <div class="footer_product">
-                <h2>products</h2>
-                <a href="#cashew">Cashew</a>
-                <a href="#shea nut">Shea Nut</a>
-                <a href="#cocoa">Cocoa</a>
+                <h2>Products</h2>
+                <a href="product.html#">Cashew</a>
+                <a href="product.html#sheanut">Shea Nut</a>
+                <a href="product.html#cocoa">Cocoa</a>
             </div>
             
             <div class="footer_contact">
-    <h2>contact us</h2>
+    <h2>Contact us</h2>
                 <a href="tel:+233244767775">Phone</a>
-                <a href="wa.me">Whatsapp</a>
+                <a href="https://wa.me/+233248002055">Whatsapp</a>
                 <a href="mailto:albncventures2013@gmail.com">Email</a>
             </div>
              
@@ -217,6 +225,6 @@ Quality raw shea nuts sourced from farmers and suppliers for commercial and indu
              <p>2026</p>
            </div>
         </section>
-    </div>
+     <script src="script.js"></script>
 </body>
 </html>
