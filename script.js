@@ -34,7 +34,7 @@ if (quoteForm) {
         event.preventDefault();
 
         const name = document.getElementById("name").value.trim();
-        const company = document.getElementById("company").value.trim();
+        const company = document.getElementById("company_name").value.trim();
         const phone = document.getElementById("contact").value.trim();
         const email = document.getElementById("email").value.trim();
         const product = document.getElementById("product").value;

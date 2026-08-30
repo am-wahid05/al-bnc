@@ -127,7 +127,7 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-image: url("Assets/cocoa.jpeg");
+    background-image: url("Assets/hero_img.jpeg");
     background-size: cover;
     background-position: center;
     line-height: 2;
@@ -907,7 +907,7 @@ margin: 42rem auto 0;
 
     @keyframes pushIn {
        from{
-        transform: translateX(10rem);
+        transform: translateX(42rem);
        } 
 
        to{
