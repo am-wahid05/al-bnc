@@ -474,16 +474,12 @@ button:hover {
 
 
     
-    .copy{
+ .copy{
     display: block;
-margin: 42rem auto 0;
+margin: 28rem 4rem 0 4rem ;
     text-align: center;
+      font-size: 1.4rem;
 }
-
-.copy p{
-  font-size: 1.4rem;
-}
-
     #menu_toggle:checked ~ .nav_links {
         display: block;
         animation:pushIn 0.5s ease-in ;
