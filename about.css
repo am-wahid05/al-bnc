@@ -76,8 +76,16 @@ nav img {
 }
 
 .logo h1 {
+    margin: 1rem 0 0;
     font-size: 2.5rem;
 }
+
+.ventures{
+margin: 0 2.5rem 0.5rem;
+    font-size: 2rem;
+    color: #faf92a;
+}
+
 
 .nav_links {
     display: flex;

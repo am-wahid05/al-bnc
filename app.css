@@ -53,7 +53,14 @@ nav img {
 }
 
 .logo h1 {
+  
     font-size: 2.5rem;
+}
+
+.ventures{
+margin: auto 2.5rem;
+    font-size: 2rem;
+    color: #faf92a;
 }
 
 i {
@@ -415,14 +422,17 @@ flex-direction: column;
     font-size: 1.5rem;
 }
 
-.form_group input {
+.form_group input,.form_group textarea {
     width: 100%;
-    padding: 1rem 1.6rem;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    font-size: 1.6rem;
+    max-width:350px;
+    height:45px;
+    padding: 1.4rem;
+    border: 1.5px solid lightgrey;
+    border-radius: 1.2rem;
+    box-shadow:0px 0px 20px -17px;
+    font-size: 1.7rem;
     outline: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: "Poppins", sans-serif;
 }
 
 .form_group input:hover {
@@ -441,16 +451,6 @@ flex-direction: column;
     outline: 1px solid green;
 }
 
-.form_group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    font-family: inherit;
-    font-size: 1.6rem;
-    resize: vertical;
-    outline: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
 .form_group textarea:focus,
 .form_group input:focus {
@@ -1138,7 +1138,15 @@ margin: 28rem 4rem 0 4rem ;
     }
 
     .map {
-        margin: 0;
+        margin: auto;
+    }
+
+    iframe{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        border: 0;
+   height: 30rem;
     }
 
     .contact_form {
