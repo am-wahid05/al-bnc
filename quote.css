@@ -219,12 +219,20 @@ p {
 .form_group select,
 .form_group textarea {
     width: 100%;
+    max-width:220px;
+    height:45px;
+
     padding: 1.4rem;
-    border: 1px solid #ccc;
-    border-radius: 0.2rem;
+    border: 1.5px solid lightgrey;
+    border-radius: 1.2rem;
+    box-shadow:0px 0px 20px -17px;
     font-size: 1.7rem;
     outline: none;
     font-family: "Poppins", sans-serif;
+}
+.input:hover{
+    border:2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
 }
 
 .form_group textarea {
@@ -235,7 +243,7 @@ p {
 .form_group input:focus,
 .form_group select:focus,
 .form_group textarea:focus {
-    border-color: #3b7a3b;
+    border:2px solid grey ;
 }
 
 button {
